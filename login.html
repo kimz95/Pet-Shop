@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PetShop</title>
+
+<link rel="stylesheet" href="css/login.css" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/login.js"></script>
+
+</head>
+
+<body>
+<form action="login.php" method="POST">
+	
+	<h1 class="title">Welcome to PetShop</h1>
+	
+	<div class="container">
+		<label for="email"><b>Email</b></label>
+		<input id="emailInput" type="text" placeholder="Please enter your Email" name="email" required>
+
+		<label for="pass"><b>Password</b></label>
+		<input id="passInput" type="password" placeholder="Please enter your Password" name="pass" required>
+		
+		<span id="errorSpan"></span>
+
+		<button type="submit">Login</button>
+	</div>
+
+	<div class="container" style="background-color:#f1f1f1">
+		<button type="button" class="registerbtn">Register</button>
+		<span class="pass"><a href="#">Forgot password?</a></span>
+	</div>
+</form>
+</body>
+
+</html>
